@@ -1,23 +1,13 @@
 #EXTM3U
-
-
 #EXTINF:-1 湖北经视 http://live.cjyun.org/hubeitv/s10008-live-hbjs.m3u8
-
 #EXTINF:-1 湖北综合 http://live.cjyun.org/hubeitv/s10008-live-hbzh.m3u8
-
 #EXTINF:-1 湖北影视 http://live.cjyun.org/hubeitv/s10008-live-hbys.m3u8
-
 #EXTINF:-1 湖北教育 http://live.cjyun.org/hubeitv/s10008-live-hbjy.m3u8
-
 #EXTINF:-1 湖北生活 http://live.cjyun.org/hubeitv/s10008-live-hbsh.m3u8
-
 #EXTINF:-1 湖北公共新闻 http://live.cjyun.org/hubeitv/s10008-live-hbgg.m3u8
-
 #EXTINF:-1 休闲指南 http://live.cjyun.org/hubeitv/s10008-live-xxzn.m3u8
-
 #EXTINF:-1 垄上频道 http://live.cjyun.org/hubeitv/s10008-live-hbls.m3u8
-
-#EXTINF:-1 美嘉购物 http://live.cjyun.org/hubeitv/s10008-live-mjgw.m3u8 作者：我爱小明星大跟班 https://www.bilibili.com/read/cv4453989/ 出处：bilibili
+#EXTINF:-1 美嘉购物 http://live.cjyun.org/hubeitv/s10008-live-mjgw.m3u8
 #EXTINF:-1  "cctv1.png",CCTV-1 综合
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226016/index.m3u8
 #EXTINF:-1  "cctv2.png",CCTV-2 财经
