@@ -1,25 +1,78 @@
 proxies:
   # Shadowsocks 节点 1
-  - name: "英国-1"
+  - name: "英国-unknown"
     type: ss
     server: 212.102.53.195
     port: 443
     cipher: aes-128-gcm
-    password: shadowocks
+    password: shadowsocks
 
-  # Shadowsocks 节点 3
-  - name: "美国-unknown 3"
+  # Shadowsocks 节点 2
+  - name: "美国-unknown 1"
     type: ss
     server: 69.50.95.203
     port: 8882
+    cipher: aes-256-gcm
+    password: kDTwXYZ9toBckC4
+
+  # VMess 节点 1
+  - name: "英国-unknown 2"
+    type: vmess
+    server: 104.19.42.49
+    port: 2095
+    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-path: /github.com/Alvin9999
+    tls: true
+
+  # VMess 节点 2
+  - name: "英国-unknown 3"
+    type: vmess
+    server: 23.162.200.227
+    port: 443
+    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-path: /linkvws
+    tls: true
+
+  # Shadowsocks 节点 3
+  - name: "美国-unknown 2"
+    type: ss
+    server: 69.50.95.203
+    port: 8888
     cipher: aes-256-cfb
     password: kDTwXYZ9toBckC4
+
+  # Shadowsocks 节点 4
+  - name: "新加坡-unknown"
+    type: ss
+    server: 13.229.182.85
+    port: 443
+    cipher: aes-256-gcm
+    password: amazonskr05
+
+  # Shadowsocks 节点 5
+  - name: "美国-unknown 3"
+    type: ss
+    server: 23.154.136.100
+    port: 8090
+    cipher: aes-256-gcm
+    password: PCn1k6SQnfO2X27
 
 proxy-groups:
   - name: "Proxy"
     type: select
     proxies:
-      - "英国-1"
+      - "英国-unknown"
+      - "美国-unknown 1"
+      - "英国-unknown 2"
+      - "英国-unknown 3"
+      - "美国-unknown 2"
+      - "新加坡-unknown"
       - "美国-unknown 3"
       - "DIRECT"
 
