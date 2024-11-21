@@ -1,10 +1,27 @@
 proxies:
   # Shadowsocks 节点 1
-  - name: "英国-unknown"
+  - name: "英国-1"
     type: ss
     server: 212.102.53.195
     port: 443
     cipher: aes-128-gcm
     password: shadowocks
+
+  # Shadowsocks 节点 3
+  - name: "美国-unknown 3"
+    type: ss
+    server: 69.50.95.203
+    port: 8882
+    cipher: aes-256-cfb
+    password: kDTwXYZ9toBckC4
+
+proxy-groups:
+  - name: "Proxy"
+    type: select
+    proxies:
+      - "英国-1"
+      - "美国-unknown 3"
+      - "DIRECT"
+
 rules:
   - MATCH,Proxy
