@@ -1,17 +1,10 @@
 proxies:
+  # Shadowsocks 节点 1
   - name: "英国-unknown"
     type: ss
     server: 212.102.53.195
     port: 443
     cipher: aes-128-gcm
     password: shadowocks
-
-proxy-groups:
-  - name: "Proxy"
-    type: select
-    proxies:
-      - "英国-unknown"
-      - "DIRECT"
-
 rules:
   - MATCH,Proxy
